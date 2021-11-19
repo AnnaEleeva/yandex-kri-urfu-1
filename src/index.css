@@ -1,0 +1,124 @@
+/* TODO */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+main {
+  min-height: 100%;
+}
+a:hover
+{
+  color:#389765;
+  text-decoration: none;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+a
+{
+  color:black;
+  text-decoration: none;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+
+
+span.red
+{
+  color: red;
+  font-size: larger;
+}
+span.yellow
+{
+  color:#389765;
+  font-size: larger;
+}
+
+
+section{
+  height: 370px;
+  border: 1px solid lightgray;
+  margin: 1%;
+  font-family: "Courier New", monospace;
+  font-weight: 300;
+
+}
+.cat:hover  a{
+  color:#389765;
+}
+section:hover {
+  box-shadow: 0px 0px 5px darkgray;
+  cursor: pointer;
+}
+
+
+section.cat
+{
+  width: 340px;
+  display: inline-block;
+  padding: 5px;
+
+}
+.photo:hover
+{
+  opacity: .9;
+  transform: scale(1.5);
+}
+.photo
+{
+  width: 340px;
+}
+
+
+
+
+.typew:focus  ~ main > section.cat .content-img
+{
+  display: inline-block;
+  width: 270px;
+}
+
+.typew:focus  ~ main > section.cat .content-text
+{
+  display: inline-block;
+  width: 35%;
+  text-align: justify;
+  vertical-align: top;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.typew:focus  ~ main> section.cat
+{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid mediumslateblue;
+}
+
+
+
+.typew:focus  ~main > section.cat .info
+{
+  visibility: visible;
+  display: inline-block;
+}
+
+.typew:focus~ main > section > img.photo
+{
+  text-align: left;
+  margin: 10px;
+}
+
+.footer {
+  flex: 0 0 auto;
+  text-align: right;
+}
